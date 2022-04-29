@@ -1,10 +1,12 @@
 .profile {
   width: 300px;
   margin: 0 auto;
+  margin-top: 30px;
 
   border: 2px solid rgb(204, 204, 204);
   border-radius: 10px;
   overflow: hidden;
+  background-color: #fff;
 }
 
 .descr {
@@ -40,7 +42,7 @@
   display: flex;
   justify-content: space-around;
 
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(240, 225, 225);
 }
 
 .item {
@@ -49,7 +51,11 @@
   flex-direction: column;
   padding: 15px;
   text-align: center;
-  //   border: 1px solid rgb(204, 204, 204);
+  border-top: 2px solid rgb(204, 204, 204);
+
+  &:not(:last-child) {
+    border-right: 2px solid rgb(204, 204, 204);
+  }
 }
 
 .quantity {

@@ -1,0 +1,35 @@
+.stats {
+  width: 300px;
+  margin: 30px auto;
+
+  border: 2px solid rgb(204, 204, 204);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.title {
+  color: black;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.list {
+  display: flex;
+}
+
+.item {
+  width: 20%;
+  padding: 15px 0;
+  text-align: center;
+  border-top: 2px solid rgb(204, 204, 204);
+
+  &:not(:last-child) {
+    border-right: 2px solid rgb(204, 204, 204);
+  }
+  & span {
+    display: block;
+  }
+}
