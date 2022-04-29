@@ -1,0 +1,29 @@
+.table {
+  background-color: rgb(195, 207, 213);
+
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  color: black;
+  border: 2px solid rgb(204, 204, 204);
+  border-radius: 7px;
+}
+
+.head {
+  & th {
+    width: 35%;
+    text-align: left;
+    padding: 10px 0;
+    padding-left: 10%;
+    border-bottom: 2px solid rgb(204, 204, 204);
+  }
+}
+
+.body {
+  background-color: white;
+
+  & td {
+    padding: 5px 0;
+    padding-left: 10%;
+  }
+}

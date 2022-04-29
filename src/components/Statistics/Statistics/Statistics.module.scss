@@ -24,6 +24,7 @@
   width: 20%;
   padding: 15px 0;
   text-align: center;
+  color: #fff;
   border-top: 2px solid rgb(204, 204, 204);
 
   &:not(:last-child) {
@@ -32,4 +33,14 @@
   & span {
     display: block;
   }
+}
+
+.label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.percentage {
+  font-weight: bold;
+  font-size: 16px;
 }
