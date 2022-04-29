@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import s from './Statistics/Statistics.module.scss';
+import s from './Statistics.module.scss';
 
 const Statistics = ({ title, stats }) => {
   function getRandomHexColor() {
@@ -26,6 +26,7 @@ const Statistics = ({ title, stats }) => {
 };
 
 Statistics.propTypes = {
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,

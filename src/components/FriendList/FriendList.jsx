@@ -1,16 +1,12 @@
-import { SpanStyled } from './FriendList.sc';
+import FriendsItem from '../FriendsItem/FriendsItem';
 import PropTypes from 'prop-types';
 import s from './FriendList.module.scss';
 
 const FriendList = ({ friends }) => {
   return (
     <ul className={s.list}>
-      {friends.map(({ avatar, name, isOnline, id }) => (
-        <li key={id} className={s.item}>
-          <SpanStyled isOnline={isOnline} className={s.status}></SpanStyled>
-          <img className={s.avatar} src={avatar} alt="User avatar" width="48" />
-          <p className={s.name}>{name}</p>
-        </li>
+      {friends.map(friend => (
+        <FriendsItem key={friend.id} friend={friend} />
       ))}
     </ul>
   );
